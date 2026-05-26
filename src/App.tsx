@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { askGemini } from "./services/geminiService";
 import { generateFluxImage } from "./services/fluxService";
 
-import micIcon from "./assets/mic.png";
+import micIcon from "./assets/Mic.png";
 import sendIcon from "./assets/send.png";
 import logoIcon from "./assets/lOGO.png";
 
