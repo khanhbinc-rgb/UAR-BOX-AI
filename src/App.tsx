@@ -20,8 +20,8 @@ function App() {
   const messagesEndRef =
     useRef<HTMLDivElement>(null);
 
-  const style = "Modern Luxury";
-  const aspectRatio = "16:9";
+const [style] = useState("Modern Luxury");
+const [aspectRatio] = useState("16:9");
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({
