@@ -17,14 +17,11 @@ function App() {
   const [selectedImage, setSelectedImage] =
     useState<string | null>(null);
 
-const [style] =
-  useState("Modern Luxury");
-
-const [aspectRatio] =
-  useState("16:9");
-
   const messagesEndRef =
     useRef<HTMLDivElement>(null);
+
+  const style = "Modern Luxury";
+  const aspectRatio = "16:9";
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({
@@ -148,13 +145,13 @@ photorealistic
       .find((m) => m.image)?.image || null;
 
   return (
-    <div className="h-screen overflow-hidden bg-[#0d0d0d] text-white">
+    <div className="h-screen overflow-hidden bg-[#0d0d0d] text-white font-sans">
 
       {/* CHAT MODE */}
       {mode === "chat" && (
         <div className="relative h-full flex flex-col overflow-hidden">
 
-          {/* BACKGROUND */}
+          {/* BG */}
           <div
             className="
             absolute
@@ -170,15 +167,15 @@ photorealistic
             <div className="flex items-center gap-3">
 
               <img
-  src={logoIcon}
-  alt="logo"
-  className="
-  w-9
-  h-9
-  rounded-full
-  object-cover
-"
-/>
+                src={logoIcon}
+                alt="logo"
+                className="
+                w-9
+                h-9
+                rounded-full
+                object-cover
+              "
+              />
 
               <div>
                 <h1 className="text-[15px] font-medium">
@@ -352,7 +349,7 @@ photorealistic
                   "
                   />
 
-                  {/* AUTO MIC / SEND */}
+                  {/* MIC / SEND */}
                   {message.trim() ? (
 
                     <button
