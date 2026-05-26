@@ -17,11 +17,11 @@ function App() {
   const [selectedImage, setSelectedImage] =
     useState<string | null>(null);
 
-  const [style, setStyle] =
-    useState("Modern Luxury");
+const [style] =
+  useState("Modern Luxury");
 
-  const [aspectRatio, setAspectRatio] =
-    useState("16:9");
+const [aspectRatio] =
+  useState("16:9");
 
   const messagesEndRef =
     useRef<HTMLDivElement>(null);
