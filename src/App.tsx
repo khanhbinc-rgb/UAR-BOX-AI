@@ -14,7 +14,7 @@ function App() {
   // STATES
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<any[]>([]);
-  const [isHome, setIsHome] = useState(true);
+  const [, setIsHome] = useState(true);
   const [chatHistory, setChatHistory] =
   useState<any[]>([]);
 
