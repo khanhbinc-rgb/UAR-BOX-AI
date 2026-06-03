@@ -509,7 +509,7 @@ function App() {
                       <div className={`${showMenu ? "flex" : "hidden"} flex-col absolute bottom-14 left-0 bg-[#1c1c1c] border border-white/10 rounded-2xl p-2 w-56 shadow-2xl`}>
                         <button onClick={() => setMode("render")} className="text-left px-4 py-3 rounded-xl hover:bg-white/10 transition text-sm">Render Box</button>
                         <label className="px-4 py-3 rounded-xl hover:bg-white/10 transition text-sm cursor-pointer">
-                          Tải ảnh / bản vẽ
+                          Add Photo & File
                           <input type="file" hidden accept="image/*" onChange={handleImageUpload} />
                         </label>
                       </div>
@@ -676,13 +676,13 @@ function App() {
                       onChange={(e) => setArchStyle(e.target.value)}
                       className="w-full p-4 bg-[#161616] border border-white/5 rounded-xl text-sm md:text-base text-slate-300 font-medium outline-none cursor-pointer focus:border-white/10 transition"
                     >
-                      <option value="Hạng mục phong cách"></option>
-                      <option value="Phong cách hiện đại">Hạng mục phong cách: Hiện đại</option>
-                      <option value="Phong cách tối giản">Hạng mục phong cách: Tối giản</option>
-                      <option value="Phong cách neoclassic">Hạng mục phong cách: Neoclassic</option>
-                      <option value="Phong cách indochine">Hạng mục phong cách: Indochine</option>
-                      <option value="Phong cách công nghiệp">Hạng mục phong cách: Công nghiệp</option>
-                      <option value="Phong cách scandinavian">Hạng mục phong cách: Scandinavian</option>
+                    
+                      <option value="Phong cách hiện đại">Phong cách hiện đại</option>
+                      <option value="Phong cách tối giản">Phong cách Tối giản</option>
+                      <option value="Phong cách neoclassic">Phong cách Neoclassic</option>
+                      <option value="Phong cách indochine">Phong cách Indochine</option>
+                      <option value="Phong cách công nghiệp">Phong cách Công nghiệp</option>
+                      <option value="Phong cách scandinavian">Phong cách Scandinavian</option>
                     </select>
 
                     <select 
@@ -690,14 +690,14 @@ function App() {
                       onChange={(e) => setArchContext(e.target.value)}
                       className="w-full p-4 bg-[#161616] border border-white/5 rounded-xl text-sm md:text-base text-slate-300 font-medium outline-none cursor-pointer focus:border-white/10 transition"
                     >
-                      <option value="Ở đường phố việt nam">Hạng mục bối cảnh: Đường phố Việt Nam</option>
-                      <option value="Ở vùng làng quên việt nam">Hạng mục bối cảnh: Vùng làng quê Việt Nam</option>
-                      <option value="Ở khu đô thị sang trọng, hiện đại vinhomes hà nội">Hạng mục bối cảnh: KĐT Vinhomes Hà Nội</option>
-                      <option value="Ở ngã ba đường phố việt nam">Hạng mục bối cảnh: Ngã ba đường phố Việt Nam</option>
-                      <option value="Ở sân vườn nhiệt đới tại miền quên việt nam">Hạng mục bối cảnh: Sân vườn nhiệt đới miền quê</option>
-                      <option value="Nằm bên đường nhựa với 2 bên cạnh nhà là cây xanh">Hạng mục bối cảnh: Đường nhựa cây xanh 2 bên</option>
-                      <option value="Nằm trong Vườn châu Âu rộng, lối đi lát đá, tượng thần và cây cắt tỉa hình khối">Hạng mục bối cảnh: Vườn Châu Âu cổ điển, tượng thần</option>
-                      <option value="Nằm dưới chân núi hùng vĩ, bao quanh là khu vườn xanh mướt và cây lá mùa thu nhiều màu sắc. Phía trước có hồ bơi và thảm cỏ phẳng mượt">Hạng mục bối cảnh: Chân núi hùng vĩ, hồ bơi & lá thu</option>
+                      <option value="Ở đường phố việt nam">Bối cảnh Đường phố Việt Nam</option>
+                      <option value="Ở vùng làng quên việt nam">Bối cảnh Vùng làng quê Việt Nam</option>
+                      <option value="Ở khu đô thị sang trọng, hiện đại vinhomes hà nội">Bối cảnh KĐT Vinhomes Hà Nội</option>
+                      <option value="Ở ngã ba đường phố việt nam">Bối cảnh Ngã ba đường phố Việt Nam</option>
+                      <option value="Ở sân vườn nhiệt đới tại miền quên việt nam">Bối cảnh Sân vườn nhiệt đới miền quê</option>
+                      <option value="Nằm bên đường nhựa với 2 bên cạnh nhà là cây xanh">Bối cảnh Đường nhựa cây xanh 2 bên</option>
+                      <option value="Nằm trong Vườn châu Âu rộng, lối đi lát đá, tượng thần và cây cắt tỉa hình khối">Bối cảnh Vườn Châu Âu cổ điển, tượng thần</option>
+                      <option value="Nằm dưới chân núi hùng vĩ, bao quanh là khu vườn xanh mướt và cây lá mùa thu nhiều màu sắc. Phía trước có hồ bơi và thảm cỏ phẳng mượt">Bối cảnh Chân núi hùng vĩ, hồ bơi & lá thu</option>
                     </select>
 
                     <select 
@@ -705,14 +705,14 @@ function App() {
                       onChange={(e) => setArchLighting(e.target.value)}
                       className="w-full p-4 bg-[#161616] border border-white/5 rounded-xl text-sm md:text-base text-slate-300 font-medium outline-none cursor-pointer focus:border-white/10 transition"
                     >
-                      <option value="Ánh sáng ban ngày tự nhiên, trời trong xanh">Hạng mục ánh sáng: Ban ngày tự nhiên</option>
-                      <option value="Ánh sáng hoàng hôn ấm áp, đổ bóng dài">Hạng mục ánh sáng: Hoàng hôn ấm áp</option>
-                      <option value="Ánh sáng ban đêm, ánh trăng chiếu sáng toàn cảnh, nhấn mạnh đèn nội thất và ngoại thất">Hạng mục ánh sáng: Ban đêm, đèn nội ngoại thất</option>
-                      <option value="Trời u ám, ánh sáng dịu, không có bóng gắt">Hạng mục ánh sáng: Trời u ám dịu nhẹ</option>
-                      <option value="Bình minh với ánh sáng trong trẻo và không khí yên bình">Hạng mục ánh sáng: Bình minh trong trẻo</option>
-                      <option value="Buổi hoàng hôn tím với ánh sáng đèn nội thất hắt ra lung linh">Hạng mục ánh sáng: Hoàng hôn tím lung linh</option>
-                      <option value="Sương mù dày đặc vào sáng sớm tạo cảm giác huyền ảo">Hạng mục ánh sáng: Sương mù huyền ảo</option>
-                      <option value="Trời vừa mưa xong đường hơi ướt, bầu trời mây nhẹ">Hạng mục ánh sáng: Sau cơn mưa mây nhẹ</option>
+                      <option value="Ánh sáng ban ngày tự nhiên, trời trong xanh">Ánh sáng Ban ngày tự nhiên</option>
+                      <option value="Ánh sáng hoàng hôn ấm áp, đổ bóng dài">Ánh sáng Hoàng hôn ấm áp</option>
+                      <option value="Ánh sáng ban đêm, ánh trăng chiếu sáng toàn cảnh, nhấn mạnh đèn nội thất và ngoại thất">Ánh sáng Ban đêm, đèn nội ngoại thất</option>
+                      <option value="Trời u ám, ánh sáng dịu, không có bóng gắt">Ánh sáng Trời u ám dịu nhẹ</option>
+                      <option value="Bình minh với ánh sáng trong trẻo và không khí yên bình">Ánh sáng Bình minh trong trẻo</option>
+                      <option value="Buổi hoàng hôn tím với ánh sáng đèn nội thất hắt ra lung linh">Ánh sáng Hoàng hôn tím lung linh</option>
+                      <option value="Sương mù dày đặc vào sáng sớm tạo cảm giác huyền ảo">Ánh sáng Sương mù huyền ảo</option>
+                      <option value="Trời vừa mưa xong đường hơi ướt, bầu trời mây nhẹ">Ánh sáng Sau cơn mưa mây nhẹ</option>
                     </select>
 
                     {/* 6. ASPECT RATIO FILTERS SELECT */}
@@ -721,11 +721,11 @@ function App() {
                       onChange={(e) => setAspectRatio(e.target.value)}
                       className="w-full p-4 bg-[#161616] border border-white/5 rounded-xl text-sm md:text-base text-slate-300 font-medium outline-none cursor-pointer focus:border-white/10 transition"
                     >
-                      <option value="1:1">Hạng mục tỉ lệ khung hình: Square (1:1)</option>
-                      <option value="4:3">Hạng mục tỉ lệ khung hình: Classic Photo (4:3)</option>
-                      <option value="3:4">Hạng mục tỉ lệ khung hình: Portrait Layout (3:4)</option>
-                      <option value="16:9">Hạng mục tỉ lệ khung hình: Widescreen (16:9)</option>
-                      <option value="9:16">Hạng mục tỉ lệ khung hình: Vertical Video (9:16)</option>
+                      <option value="1:1">Tỉ lệ khung hình (1:1)</option>
+                      <option value="4:3">Tỉ lệ khung hình (4:3)</option>
+                      <option value="3:4">Tỉ lệ khung hình (3:4)</option>
+                      <option value="16:9">Tỉ lệ khung hình (16:9)</option>
+                      <option value="9:16">Tỉ lệ khung hình (9:16)</option>
                     </select>
                   </div>
                 )}
@@ -733,7 +733,7 @@ function App() {
                 {/* TABS EXTENSIONS */}
                 {mainCategory === "interior" && (
                   <div className="p-4 border border-white/5 bg-[#161616]/30 rounded-xl text-center text-sm text-slate-500 italic">
-                    Hạng mục cấu hình chi tiết Nội Thất đang được tối ưu hóa...
+                    Hạng mục cấu hình chi tiết Nội Thất đang được tối ưu hóa.
                   </div>
                 )}
                 {mainCategory === "planning" && (
@@ -767,7 +767,7 @@ function App() {
               {/* 8. EXECUTION INTERFACE WITH 1K/2K/4K RADIO BUTTONS AND ONE EXCLUSIVE MASTER RENDER BUTTON */}
               <div className="mt-5 space-y-4 pt-2 border-t border-white/5">
                 <div className="space-y-2">
-                  <span className="text-xs uppercase font-bold tracking-wider text-slate-500 pl-1">Lựa chọn chất lượng ảnh xuất bản</span>
+                  <span className="text-xs uppercase font-bold tracking-wider text-slate-500 pl-1">Chất lượng ảnh xuất bản</span>
                   <div className="grid grid-cols-3 gap-2 bg-[#161616] p-1 border border-white/5 rounded-xl">
                     {(["1K", "2K", "4K"] as const).map((level) => (
                       <button
@@ -832,8 +832,8 @@ function App() {
           <div className="w-full max-w-sm bg-[#141414] border border-white/10 rounded-3xl p-6 shadow-2xl relative space-y-6">
             <button onClick={() => setShowAuthModal(false)} className="absolute top-4 right-4 text-slate-500 hover:text-white transition">✕</button>
             <div className="text-center space-y-2">
-              <h2 className="text-2xl font-semibold tracking-tight">Chào mừng đến với UAR</h2>
-              <p className="text-xs text-slate-400">Đăng nhập để lưu trữ lịch sử cấu hình hệ thống render của bạn.</p>
+              <h2 className="text-2xl font-semibold tracking-tight">Đăng nhập hoặc đăng ký</h2>
+              <p className="text-xs text-slate-400">Bạn sẽ nhận được phản hồi thông minh và hệ thống render sẽ có ảnh chất lượng hơn.</p>
             </div>
             <button 
               onClick={handleGoogleLogin}
@@ -848,7 +848,7 @@ function App() {
               </svg>
               Tiếp tục với tài khoản Google
             </button>
-            <p className="text-[10px] text-center text-slate-600">Bằng việc tiếp tục, bạn đồng ý với Điều khoản dịch vụ và Chính sách bảo mật của UAR AI.</p>
+            <p className="text-[10px] text-center text-slate-600">Bằng việc tiếp tục, bạn đồng ý với Điều khoản dịch vụ và Chính sách bảo mật của UAR BOX.</p>
           </div>
         </div>
       )}
